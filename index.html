@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритмика — Международная школа программирования</title>
+    <meta name="description" content="Международная школа программирования Алгоритмика. Обучение детей и взрослых программированию.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== ФОНОВЫЕ ПЛАВАЮЩИЕ ФИГУРЫ ==================== -->
+    <div class="bg-shapes" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="logo-text">Алгоритмика</span>
+            </a>
+
+            <nav class="nav" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">О школе</a></li>
+                    <li><a href="#courses" class="nav-link">Курсы</a></li>
+                    <li><a href="#teachers" class="nav-link">Преподаватели</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section class="hero" id="hero">
+            <div class="container hero-inner">
+                <div class="hero-content fade-in">
+                    <span class="badge">
+                        <i class="fa-solid fa-globe"></i> Международная школа
+                    </span>
+                    <h1 class="hero-title">
+                        Школа программирования
+                        <span class="gradient-text">Алгоритмика</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Учим детей и взрослых программированию с нуля до PRO.
+                        Международные программы, практика с первого дня и сертификат
+                        мирового образца.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacts" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> Записаться на курс
+                        </a>
+                        <a href="#about" class="btn btn-glass">
+                            Узнать больше
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">15 000+</span>
+                            <span class="stat-label">Учеников</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Стран</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Довольны</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in">
+                    <div class="glass-card code-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <pre class="code-body"><code><span class="c-purple">def</span> <span class="c-blue">hello</span>():
+    <span class="c-pink">print</span>(<span class="c-green">"Алгоритмика!"</span>)
+    <span class="c-purple">return</span> 🚀</code></pre>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fa-brands fa-python"></i> Python
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== О ШКОЛЕ ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">О школе</span>
+                    <h2 class="section-title">Почему выбирают <span class="gradient-text">нас</span></h2>
+                    <p class="section-desc">Мы создаём будущее через код — с заботой о каждом ученике.</p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="glass-card feature-card fade-in">
+                        <div class="feature-icon icon-purple">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <h3>Опытные преподаватели</h3>
+                        <p>Практикующие разработчики из международных IT-компаний с педагогическим опытом.</p>
+                    </article>
+
+                    <article class="glass-card feature-card fade-in">
+                        <div class="feature-icon icon-blue">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <h3>Международные программы</h3>
+                        <p>Учебные курсы, признанные в 30+ странах мира и адаптированные под любой уровень.</p>
+                    </article>
+
+                    <article class="glass-card feature-card fade-in">
+                        <div class="feature-icon icon-pink">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <h3>Практика с первого дня</h3>
+                        <p>Реальные проекты, командная работа и портфолио, которое открывает двери в IT.</p>
+                    </article>
+
+                    <article class="glass-card feature-card fade-in">
+                        <div class="feature-icon icon-orange">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3>Сертификат</h3>
+                        <p>Международный сертификат по окончании курса, подтверждающий ваши навыки.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== КУРСЫ ==================== -->
+        <section class="courses section" id="courses">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Курсы</span>
+                    <h2 class="section-title">Наши <span class="gradient-text">направления</span></h2>
+                    <p class="section-desc">Выберите то, что зажигает именно вас.</p>
+                </div>
+
+                <div class="courses-grid">
+                    <article class="glass-card course-card fade-in">
+                        <div class="course-icon icon-blue"><i class="fa-brands fa-python"></i></div>
+                        <h3>Python</h3>
+                        <p>От основ синтаксиса до анализа данных и машинного обучения.</p>
+                        <a href="#contacts" class="btn btn-small btn-glass">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="glass-card course-card fade-in">
+                        <div class="course-icon icon-yellow"><i class="fa-brands fa-js"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>Интерактивные сайты, приложения и современные фреймворки.</p>
+                        <a href="#contacts" class="btn btn-small btn-glass">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="glass-card course-card fade-in">
+                        <div class="course-icon icon-purple"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3>Web-разработка</h3>
+                        <p>HTML, CSS, React — полный стек для создания сайтов с нуля.</p>
+                        <a href="#contacts" class="btn btn-small btn-glass">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="glass-card course-card fade-in">
+                        <div class="course-icon icon-pink"><i class="fa-solid fa-robot"></i></div>
+                        <h3>Робототехника</h3>
+                        <p>Сборка роботов, Arduino и программирование устройств.</p>
+                        <a href="#contacts" class="btn btn-small btn-glass">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="glass-card course-card fade-in">
+                        <div class="course-icon icon-orange"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3>Game Dev</h3>
+                        <p>Создание игр на Unity и Unreal Engine — от идеи до релиза.</p>
+                        <a href="#contacts" class="btn btn-small btn-glass">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="glass-card course-card fade-in">
+                        <div class="course-icon icon-green"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <h3>Scratch для детей</h3>
+                        <p>Программирование в игровой форме для самых маленьких.</p>
+                        <a href="#contacts" class="btn btn-small btn-glass">Подробнее <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ПРЕПОДАВАТЕЛИ ==================== -->
+        <section class="teachers section" id="teachers">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Команда</span>
+                    <h2 class="section-title">Наши <span class="gradient-text">преподаватели</span></h2>
+                    <p class="section-desc">Люди, которые влюбят вас в программирование.</p>
+                </div>
+
+                <div class="teachers-grid">
+                    <article class="glass-card teacher-card fade-in">
+                        <div class="teacher-avatar icon-purple">👨‍💻</div>
+                        <h3>Алексей Иванов</h3>
+                        <span class="teacher-role">Python / ML</span>
+                        <p>8 лет в Data Science, ex-разработчик Яндекса.</p>
+                    </article>
+
+                    <article class="glass-card teacher-card fade-in">
+                        <div class="teacher-avatar icon-pink">👩‍💻</div>
+                        <h3>Мария Смирнова</h3>
+                        <span class="teacher-role">Frontend / JavaScript</span>
+                        <p>Ведёт проекты в международной IT-компании.</p>
+                    </article>
+
+                    <article class="glass-card teacher-card fade-in">
+                        <div class="teacher-avatar icon-blue">👨‍🏫</div>
+                        <h3>Дмитрий Орлов</h3>
+                        <span class="teacher-role">Game Dev / Unity</span>
+                        <p>Выпустил 5+ игр в Steam, наставник юных разработчиков.</p>
+                    </article>
+
+                    <article class="glass-card teacher-card fade-in">
+                        <div class="teacher-avatar icon-orange">👩‍🔬</div>
+                        <h3>Екатерина Волкова</h3>
+                        <span class="teacher-role">Scratch / Kids</span>
+                        <p>Педагог с 10-летним стажем, любимица малышей.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== КОНТАКТЫ ==================== -->
+        <section class="contacts section" id="contacts">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Контакты</span>
+                    <h2 class="section-title">Свяжитесь <span class="gradient-text">с нами</span></h2>
+                    <p class="section-desc">Запишитесь на пробное занятие или задайте вопрос.</p>
+                </div>
+
+                <div class="contacts-grid">
+                    <!-- Информация -->
+                    <div class="glass-card contacts-info fade-in">
+                        <h3>Наши контакты</h3>
+
+                        <a href="tel:89667222244" class="contact-item">
+                            <span class="contact-icon icon-purple"><i class="fa-solid fa-phone"></i></span>
+                            <span class="contact-text">
+                                <small>Телефон</small>
+                                <strong>8 966 722 22 44</strong>
+                            </span>
+                        </a>
+
+                        <div class="contact-item">
+                            <span class="contact-icon icon-pink"><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="contact-text">
+                                <small>Адрес</small>
+                                <strong>ул. Умара Кадырова</strong>
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon icon-blue"><i class="fa-solid fa-clock"></i></span>
+                            <span class="contact-text">
+                                <small>Режим работы</small>
+                                <strong>Пн–Сб: 09:00 – 20:00</strong>
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon icon-orange"><i class="fa-solid fa-envelope"></i></span>
+                            <span class="contact-text">
+                                <small>Email</small>
+                                <strong>info@algoritmika.school</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Форма -->
+                    <form class="glass-card contact-form fade-in" onsubmit="event.preventDefault(); alert('Спасибо! Мы свяжемся с вами.');">
+                        <h3>Записаться на занятие</h3>
+
+                        <label class="form-field">
+                            <span>Имя</span>
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </label>
+
+                        <label class="form-field">
+                            <span>Телефон</span>
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </label>
+
+                        <label class="form-field">
+                            <span>Курс</span>
+                            <select name="course">
+                                <option>Python</option>
+                                <option>JavaScript</option>
+                                <option>Web-разработка</option>
+                                <option>Робототехника</option>
+                                <option>Game Dev</option>
+                                <option>Scratch для детей</option>
+                            </select>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                    <span class="logo-text">Алгоритмика</span>
+                </a>
+                <p>Международная школа программирования для детей и взрослых.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#about">О школе</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:89667222244">8 966 722 22 44</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> ул. Умара Кадырова</li>
+                </ul>
+                <div class="socials">
+                    <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" aria-label="VK"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Алгоритмика. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== JS: ТЁМНАЯ ТЕМА + МЕНЮ ==================== -->
+    <script>
+        // ===== Тёмная тема =====
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                document.body.classList.add('dark-theme');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                document.body.classList.remove('dark-theme');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        };
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.body.classList.toggle('dark-theme');
+            const newTheme = isDark ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+
+        // ===== Мобильное меню =====
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('navMenu');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // ===== Анимация появления при скролле =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
